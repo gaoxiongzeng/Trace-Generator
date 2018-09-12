@@ -91,7 +91,7 @@ int main(void)
     srand(754); 
 
     /* Generate traffic flows */
-    for (flow_id=host_num; flow_id<flow_total_num; flow_id++) {
+    for (flow_id=0; flow_id<flow_total_num; flow_id++) {
         int src_host = rand() % host_num;
         int dst_host = rand() % host_num;
 
